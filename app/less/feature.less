@@ -1,0 +1,60 @@
+.feature {
+  padding: 0 15px 40px;
+  .font-poppins();
+  background-color: @bg-grey;
+
+
+  &__title {
+    position: relative;
+    top: -35px;
+    margin: 0;
+    padding: 0 15px ;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    & strong {
+      color: @color-theme;
+    }
+  }
+
+
+  &__text {
+    margin: 0;
+    padding-bottom: 20px;
+
+    text-align: center;
+    color: @color-textdescription;
+
+
+    @media @desktop-widths {
+      padding: 0 150px 20px;
+    }
+  }
+
+  @media @desktop-widths {
+    height: 290px;
+    background-color: @bg-grey;
+  }
+
+  &__header {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__rectangle {
+    position: relative;
+    top: -42px;
+    margin: 0 15px;
+    width: auto;
+    height: 45px;
+    background-color: @bg-grey;
+
+    @media @desktop-widths {
+      margin: 0 220px;
+    }
+  }
+
+}

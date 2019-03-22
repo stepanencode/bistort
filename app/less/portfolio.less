@@ -1,0 +1,143 @@
+.portfolio {
+  margin: 0;
+  padding: 0;
+  background-color: @bg-white;
+
+  &__title {
+    margin: 0;
+    padding: 75px 0 10px;
+    .font-oswald();
+    font-size: 38px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 5px 15px 25px;
+    .font-poppins();
+    text-align: center;
+    color: @color-textdescription;
+
+    @media @desktop-widths {
+      padding: 5px 75px 25px;
+    }
+  }
+
+
+  &__list{
+    @media @desktop-widths {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 0 100px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    background: @bg-white;
+
+    &:nth-child(even),
+    &:nth-child(3),
+    &:nth-child(5) {
+      display: none;
+
+      @media @desktop-widths {
+        display: block;
+      }
+    }
+
+    @media @desktop-widths {
+      height: auto;
+      width: 400px;
+      margin: 0 15px 0;
+      padding-bottom: 0;
+      background: @bg-white;
+    }
+  }
+
+  &__img {
+    height: 290px;
+    width: 400px;
+    margin: 0;
+    background: @color-textdescription;
+    opacity: 0.9;
+
+    &:hover {
+      opacity: 1;
+      outline: 2px solid @color-theme;
+    }
+
+    @media @desktop-widths {
+      height: 290px;
+      width: 400px;
+    }
+  }
+
+  &__img-1 {
+    background: url("../img/coffee.jpeg");
+  }
+
+  &__img-2 {
+    background: url("../img/dog.jpg");
+  }
+
+  &__img-3 {
+    background: url("../img/houses.jpg");
+  }
+
+  &__img-4 {
+    background: url("../img/map.jpg");
+  }
+
+  &__img-5 {
+    background: url("../img/shop-now.jpg");
+  }
+
+  &__img-6 {
+    background: url("../img/travel.jpg");
+  }
+
+  &__date-box {
+    position: relative;
+    top: 0;
+    left: 30px;
+    width: 100px;
+    height: 85px;
+    background: @bg-white;
+    z-index: 10;
+
+    @media @desktop-widths {
+      position: relative;
+      top: 0;
+      left: 30px;
+      width: 100px;
+      height: 85px;
+      background: @bg-white;
+      z-index: 10;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 20px 15px 60px;
+    .font-oswald();
+    font-size: 18px;
+
+    @media @desktop-widths {
+      padding: 25px 15px 45px;
+    }
+  }
+
+  &__date {
+    margin: 0;
+    padding-top: 18px;
+    .font-poppins();
+    text-align: center;
+  }
+}
